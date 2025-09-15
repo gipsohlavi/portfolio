@@ -56,7 +56,7 @@
             </div>
             <div class="main-content">
                 <div class="about font-english">
-                    <div class="title"><h2>About</h2></div>
+                    <div id="about" class="title"><h2>About</h2></div>
                     <div class="circle-box">
                         <img src="./images/jazzneko_1.png" alt="jazzneko">
                     </div>
@@ -72,6 +72,9 @@
                             全国を出張しながら、取材補助したり、売店運営したりいろいろしてました。
                         </p>
                         <p>前職にて、社内業務効率化のために独学でVBAを用いたシステム開発をしたことがきっかけで、IT業界に興味を持ち、就職を目指し勉強しています</p>
+                        <p>訓練校ではHTML/CSS/JavaScript/PHP/CMS(WordPress)<br>MySQL/Javaを主に学びました。</p>
+                        <p>エディターはVScodoを使用。PHPの環境構築はxampで行い、Javaの開発環境はEclipse2024です。</p>
+                        <br>
                         <p>音楽（オルタナ・シューゲイザー）が好き</p>
                         <p>趣味はギター、ベース演奏。エフェクター製作。DIY。</p>
                         <br>
@@ -88,54 +91,88 @@
                         </table>
                     </div>
                 </div>
+                <div class="works font-english">
+                    <div id="works" class="title"><h2>Works</h2></div>
+                    <div class="works-container">
+                        <div class="works-content">
+                            <a href="https://github.com/gipsohlavi/yoyaku/">
+                                <div class="img-circle"><img src="images/atelier_noir_top.png" alt="tumbnail1"></div>
+                                <div><p class="font-jp">架空の美容院サイト</p></div>
+                            </a>
+                            <div class="work-text">
+                                <p>個人でPHPの学習のために制作したWebサイトです。</p>
+                                <p>某大手美容院予約サイトのように、一目で予約可能時間帯が分かるような機能実現を目指しました。</p>
+                                <p>メニューごとに所要時間が決まっており、既存の予約情報と照らし合わせ、所要時間含め予約が被らないときのみ、予約ボタンが押下可能になるようになっています。</p>
+                                <p>製作期間：1週間</p>
+                            </div>
+                        </div>
+                        <div class="works-content">
+                            <a href="https://github.com/gipsohlavi/mouse-store-website/">
+                                <div class="img-circle"><img src="images/kelot_top.png" alt="tumbnail1"></div>
+                                <div><p class="font-jp">架空のマウス販売サイト</p></div>
+                            </a>
+                            <div class="work-text">
+                                <p>職業訓練校の卒業制作として、3人1チームで制作したECサイトです。</p>
+                                <p>DB設計、商品ページの検索機能、管理者ページの税率、送料、ポイント機能を主に担当しました。</p>
+                                <p>詳細はgithubのREADMEをご確認ください。</p>
+                                <p>製作期間:3週間</p>
+                            </div>
+                        </div>
+                        <div class="works-content">
+                            <a href="https://github.com/gipsohlavi/schedule/">
+                                <div class="img-circle"><img src="images/schedule_top.png" alt="tumbnail1"></div>
+                                <div><p class="font-jp">スケジュール管理アプリ</p></div>
+                            </a>
+                            <div class="work-text">
+                                <p>Javaの勉強のために制作しました。</p>
+                                <p>表形式で１日の予定が一目でわかる形式を採用しました。</p>
+                                <p>日付選択、予定の登録、参照など基本的な機能の搭載を行っています。</p>
+                                <p>製作期間:2週間</p>
+                            </div>
+                        </div>
+                        <div class="works-content">
+                            <a href="https://github.com/gipsohlavi/laravel-test/">
+                                <div class="img-circle"><img src="images/tubuyaki_top.png" alt="tumbnail1"></div>
+                                <div><p class="font-jp">つぶやきアプリ</p></div>
+                            </a>
+                            <div class="work-text">
+                                <p>Laravelの勉強のために購入した教本に沿って制作したものです。</p>
+                                <p>Docker/sailで開発環境を構築しました</p>
+                                <p>製作期間:1週間</p>
+                            </div>
+                        </div>
+                        <div class="works-content">
+                            <a href="https://github.com/gipsohlavi/JYU-/">
+                                <div class="img-circle"><img src="images/JYU~!.jpg" alt="tumbnail1"></div>
+                                <div><p class="font-jp">自作キーボード配列</p></div>
+                            </a>
+                            <div class="work-text">
+                                <p>プログラミングの勉強を始めた際、ホームポジションから数字キーや各種記号のタイポが頻発し、解決のため自作キーボード配列を考案しました。</p>
+                                <p>利用にはWindows PowerToys と AutoHotKey が必要です。</p>
+                                <p>随時修正更新していきます。</p>
+                            </div>
+                        </div>
+                        <div class="works-content">
+                            <a href="https://github.com/gipsohlavi/jnmkb9/">
+                                <div class="img-circle"><img src="images/jnmkb9.JPEG" alt="tumbnail1"></div>
+                                <div><p class="font-jp">完全自作キーボード</p></div>
+                            </a>
+                            <div class="work-text">
+                                <p>自作キーボード配列用のキーボード作成のため、前段階として製作した小型9キーキーボードです。</p>
+                                <p>外観から配線設計、プログラミングまで一貫して設計しました。</p>
+                                <p>QMK FirmwareをForkし開発環境を構築し、専用に作成したファームウェアをマイコン(ProMicro)に書き込んでいます。</p>
+                                <p>製作期間:2週間</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
             </div>
             <div class="right-content">
                 <ul class="font-english">
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="works.php">Works</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="works font-english">
-            <div class="title"><h2>Works</h2></div>
-            <div class="works-container">
-                <div class="works-content">
-                    <a href="work.php?id=1">
-                        <div class="img-circle"><img src="images/atelier_noir_top.png" alt="tumbnail1"></div>
-                        <div><p class="font-jp">架空の美容院サイト</p></div>
-                    </a>
-                </div>
-                <div class="works-content">
-                    <a href="work.php?id=2">
-                        <div class="img-circle"><img src="images/kelot_top.png" alt="tumbnail1"></div>
-                        <div><p class="font-jp">架空のマウス販売サイト</p></div>
-                    </a>
-                </div>
-                <div class="works-content">
-                    <a href="work.php?id=3">
-                        <div class="img-circle"><img src="images/schedule_top.png" alt="tumbnail1"></div>
-                        <div><p class="font-jp">スケジュール管理アプリ</p></div>
-                    </a>
-                </div>
-                <div class="works-content">
-                    <a href="work.php?id=4">
-                        <div class="img-circle"><img src="images/tubuyaki_top.png" alt="tumbnail1"></div>
-                        <div><p class="font-jp">つぶやきアプリ</p></div>
-                    </a>
-                </div>
-                <div class="works-content">
-                    <a href="work.php?id=5">
-                        <div class="img-circle"><img src="images/JYU~!.jpg" alt="tumbnail1"></div>
-                        <div><p class="font-jp">自作キーボード配列</p></div>
-                    </a>
-                </div>
-                <div class="works-content">
-                    <a href="work.php?id=6">
-                        <div class="img-circle"><img src="images/jnmkb9.JPEG" alt="tumbnail1"></div>
-                        <div><p class="font-jp">完全自作キーボード</p></div>
-                    </a>
-                </div>
-            </div>  
         </div>
         <footer class="font-english">
             <span>©NISHIOKA TAKUMA</span>

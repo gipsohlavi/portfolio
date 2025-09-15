@@ -155,27 +155,50 @@ footer{
     object-fit: cover;
 }
 
-/* work */
-.work {
-    width: 100%;
-}
-.work-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;   
-    width: 100%; 
-}
-.work img {
-    width: 500px;
-    height: 375px;
-    object-fit: cover;
-}
 .work-text{
     width: 500px;
-    margin: 3rem auto;
+    margin: 1rem auto;
 }
 .work-text p{
     text-align: left;
     padding: 0 1rem;
+}
+
+/* 画面幅が1200px以下のときだけ適用 */
+@media screen and (max-width: 1200px) {
+    .work-text{
+        width: 400px;
+        margin: 1rem auto;
+    }
+    .left-content h1 {
+        font-size: 1.5rem;
+    }
+    .about-text {
+        width:400px;
+    }
+}
+/* 画面幅が992px以下のときだけ適用 */
+@media screen and (max-width: 992px) {
+    .right-content{
+        display: none !important;
+    }
+    .left-content{
+        display: none !important;
+    }
+    .work-text{
+        width: 300px;
+        margin: 1rem auto;
+    }
+}
+/* 画面幅が768px以下のときだけ適用 */
+@media screen and (max-width: 768px) {
+    .work-text{
+        width: 400px;
+    }
+    .works-content {
+        width: 450px !important;
+    }
+    .about-text {
+        width:350px;
+    }
 }
